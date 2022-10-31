@@ -1,0 +1,87 @@
+.popup{
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    bottom:3%;
+    right:3%;
+    width:600px;
+    height: 70vh;
+}
+.myHeader{
+   color:white;
+   padding: 3%;
+}
+.myContent{
+    display: flex;
+    margin-top: 30px;
+}
+hr{
+    width:70%;
+    border-bottom: 0.5px solid white;
+    margin-top: 4%;
+}
+h3{
+    font-size: 1.3em;
+    padding: 7%;
+}
+.myHeader i{
+    color:rgb(49, 49, 49);
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+
+}
+span{
+    color:rgb(49, 49, 49);
+}
+.leftBox{
+    flex-grow: 1;
+    text-align: center;
+}
+.rightBox{
+    flex-grow: 1;
+    margin-top: 20px;
+}
+.rightBox img {
+    width:120px;
+    box-shadow: 2px 2px 5px grey;
+    transition: 0.5s;
+}
+strong{
+    color:black;
+}
+.fa.fa-github{
+    color:black;
+}
+.bottom{
+    text-align: center;
+    display: none;
+}
+b{
+    color:rgb(43, 32, 2);
+    font-size: 0.7em;
+    padding: 3%;
+}
+@media screen and (max-width: 1000px) {
+    .popup {
+     top:0;
+     right:0;
+     width:100%;
+     height:60vh;
+     border: none;
+    }
+    .bottom{
+        padding: 2%;
+    }
+    hr{
+        display:none;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+
+    .bottom{
+        display: block;
+        color:black;
+    }
+    
+  }

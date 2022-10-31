@@ -1,0 +1,39 @@
+.tableApp{
+    width:100%;
+    font-family: 'Kalam', cursive;
+}
+.tableApp a{
+    font-size: 2.6em;
+    color:gray;
+}
+.tableApp a:hover{
+    color:#72bf44;
+    font-size: 2.7em;
+   
+}
+.tableApp p{
+  position:absolute;
+  bottom:5px;
+  right:15px;
+}
+.tableApp, tr, td {
+    position: relative;
+    border: 1px solid darkgray;
+    padding:3%;
+    border-collapse: collapse;
+    height: 33vh;
+  }
+@media screen and (max-width:1000px) {
+    .tableApp a{
+        font-size: 1em;
+    }
+    .tableApp p{
+        font-size: 10px;
+        bottom:-15px;
+  right:3px;
+  color:rgb(87, 85, 85);
+    }
+    .tableApp span{
+        font-size: 12px;
+    }
+}

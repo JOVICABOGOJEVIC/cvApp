@@ -1,0 +1,157 @@
+.myContent{
+    display: flex;
+}
+.leftSide{
+    background:#72bf44;
+    width: 60%;
+    height: 85vh;
+}
+.myPortfolio{
+    border-bottom:3px solid black;
+}
+.myInformation {
+   margin-left: 6%;
+}
+.myInformation i{
+    margin-left: 9%;
+    font-size: 25px;
+}
+.myPopup{
+    width:82%;
+    text-align: justify;
+    margin-top: 3%;
+    padding:4%;
+}
+table{
+    width:90%;
+}
+.myClass {
+    font-size:38px;
+  }
+.rightSide{
+    background-color: rgb(218, 213, 213);
+    width: 40%;
+    height: 85vh;
+}
+.myFamily{
+    padding: 5%;
+}
+.myFamily i{
+    font-size: 27px;
+}
+.myFamily i:nth-child(3){
+    font-size: 20px;
+}
+.myFamily i:nth-child(4){
+    font-size: 17px;
+}
+.myFamily i:nth-child(5){
+    font-size: 12px;
+}
+h1{
+    margin: 5% 10%;
+    font-size: 3em;
+}
+.footer{
+background-color: rgb(4, 4, 4);
+width:100%;
+height: 15vh;
+}
+
+ul{
+    margin: 0;
+    color:white;
+    font-size: 0.8em;
+    padding-top:1% ;
+}
+li{
+list-style: none;
+}
+li a{
+    color:grey;
+}
+li a:hover{
+    color:#999;
+    text-decoration: none; 
+}
+.myApp{
+    float: right;
+    text-align: center;
+    padding: 3%;
+    color:rgb(30, 29, 29);
+}
+.myApp h2{
+    font-size: 18px;
+}
+@media screen and (max-width: 1000px) {
+    .myContent {
+     display:relative;
+    }
+    .leftSide{
+        position: absolute;
+        width: 100%;
+        top:500px;
+        text-align: center;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .myInformation {
+        margin: 0;
+     }
+     .myInformation i{
+        font-size: 25px;
+    margin-left:0;
+    padding: 2%;
+    }
+    .rightSide{
+        background-color: rgb(218, 213, 213);
+        width: 100%;
+        height: 10%;
+    }
+    .myPopup{
+        width:100%;
+        text-align: justify;
+        margin-top: 3%;
+        padding:4%;
+    }
+    table{
+        width:100%;
+    }
+    .footer{
+        position: absolute;
+        top:350px;
+        background-color: white;
+        width:100%;
+        height: 15vh;
+        }
+        .myApp{
+            text-align: center;
+            padding-right: 3%;
+            position: absolute;
+            top:450px;
+            right: 10px;
+            display: flex;
+        }
+        .myApp h2{
+            font-size: 1em;
+        }
+        ul{
+            text-align: center;
+            color:white;
+            font-size: 0.8em;
+            margin-top: 1%;
+            padding: 2% 3%;
+        }
+        ul{
+            margin: 0;
+            color:black;
+            font-size: 0.8em;
+            padding-top:1% ;
+        }
+  }
+  @media screen and (min-width: 1000px) {
+  .hrFooter{
+   display: none;  
+   }
+  }

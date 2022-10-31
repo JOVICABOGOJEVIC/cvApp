@@ -1,0 +1,17 @@
+.warningInfo{
+   color:red;
+   font-size:0.8em;
+   float:right;
+   padding-right: 2%;
+}
+.addInput{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   padding:1%;
+}
+.addInput input{
+width: 90%;
+}
+.disabled{
+display:none;
+}

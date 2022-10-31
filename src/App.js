@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import styles from './App.module.css';
+import DisplayHome from './components/Home/DisplayHome';
+import UserList from './components/Users/UserList/UserList';
+import PlayerList from './components/Players/PlayerList/PlayerList';
+import MyApps from './components/MyApps/MyApps';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.myContainer}>
+      <BrowserRouter>
+        {/*<DisplayHome />
+        <UserList />
+  <PlayerList />*/}
+        <Route path='/' exact component={DisplayHome}></Route>
+        <Route path='/myapps' component={MyApps}></Route>
+        <Route path='/app5' component={PlayerList}></Route>
+        <Route path='/app6' component={UserList}></Route>
+        </BrowserRouter>
     </div>
   );
 }

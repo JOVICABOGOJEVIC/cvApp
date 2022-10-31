@@ -38,8 +38,6 @@ const Popup = () => {
               
 
             </div>
-            <hr />
-            
             <div className={styles.bottom}>
             <b>My goal is become part of the company where I can utilize and improve my skils and gain more
                     knowledge while enhancing the company's productivity and reputation.

@@ -25,6 +25,9 @@
 table{
     width:90%;
 }
+table tbody tr td{
+    height:auto;
+}
 .myClass {
     font-size:38px;
   }

@@ -56,11 +56,12 @@ strong{
 .bottom{
     text-align: center;
     display: none;
+    margin-top: 2%;
 }
 b{
     color:rgb(43, 32, 2);
     font-size: 0.7em;
-    padding: 3%;
+    padding: 2%;
 }
 @media screen and (max-width: 1000px) {
     .popup {

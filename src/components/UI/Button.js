@@ -5,7 +5,7 @@ const Button = (props) =>{
         props.savePlayers()
     }
 return(
-    <button onClick={savePlayer}>Save</button>
+    <button className={`${props.valid && styles.disableButton}`} onClick={savePlayer}>Save</button>
 )
 }
 export default Button;

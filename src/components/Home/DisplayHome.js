@@ -20,13 +20,13 @@ const DisplayHome = () =>{
         <i className="fa fa-address-card"
         onMouseEnter={() => setPopup1(true)} 
         onMouseLeave={() => setPopup1(false)}></i>
-        <i class="fa fa-graduation-cap"
+        <i className="fa fa-graduation-cap"
         onMouseEnter={() => setPopup2(true)} 
         onMouseLeave={() => setPopup2(false)}></i>
-        <i class="fa fa-briefcase"
+        <i className="fa fa-briefcase"
         onMouseEnter={() => setPopup3(true)} 
         onMouseLeave={() => setPopup3(false)}></i>
-        <i class="fa fa-rocket"
+        <i className="fa fa-rocket"
         onMouseEnter={() => setPopup4(true)} 
         onMouseLeave={() => setPopup4(false)}></i>
         </div>
@@ -34,7 +34,7 @@ const DisplayHome = () =>{
       
         {isPopup1 && (   <div className={styles.myPopup}>
        
-        <table class="table table-secondary">
+        <table className="table table-secondary">
   <tbody>
             <tr>
       <td>
@@ -54,7 +54,7 @@ const DisplayHome = () =>{
        </div> )}
        {isPopup2 && (   <div className={[styles.myPopup]}>
             
-            <table class="table table-secondary">
+            <table className="table table-secondary">
   <tbody>
             <tr>
       <td> School of Electrical Engineering
@@ -69,7 +69,7 @@ const DisplayHome = () =>{
         </div>)}
         {isPopup3&& (   <div className={[styles.myPopup]}>
             <span className={styles.myPopup3}>
-            <table class="table table-secondary">
+            <table clasName="table table-secondary">
   <tbody>
     <tr>
       <th scope="row">2009-2018 Jul</th>
@@ -99,7 +99,7 @@ const DisplayHome = () =>{
             <span className={styles.myPopup4}>
                 
                 
-            <table class="table table-secondary">
+            <table className="table table-secondary">
             <tbody>
     <tr>
       <td scope="row">Skills</td>
@@ -143,15 +143,15 @@ const DisplayHome = () =>{
             <Link to='/myapps'>
             <div className={styles.myApp}>
             <h2>My Apps and Sites</h2>
-            <i class="fa-solid fa-arrow-right-long"></i>
+            <i className="fa-solid fa-arrow-right-long"></i>
             </div>
             </Link>
             <div className={styles.myFamily}>
-            <i class="fa fa-female"></i>
-            <i class="fa fa-male"></i>
-            <i class="fa fa-male"></i>
-            <i class="fa fa-male"></i>
-            <i class="fa fa-male"></i>
+            <i className="fa fa-female"></i>
+            <i className="fa fa-male"></i>
+            <i className="fa fa-male"></i>
+            <i className="fa fa-male"></i>
+            <i className="fa fa-male"></i>
             </div>
            
         </div>

@@ -15,3 +15,6 @@ width: 90%;
 .disabled{
 display:none;
 }
+.errorInput{
+   background-color: rgb(250, 210, 210);
+}

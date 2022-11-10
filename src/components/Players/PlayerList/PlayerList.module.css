@@ -12,11 +12,13 @@ h4{
     color:green;
     font-size: 1em;
 }
+.moneyBox{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+}
 .going{
     display: inline;
-}
-.wait{
-    display: none;
 }
 .total{
     font-size: 3em;
@@ -26,9 +28,41 @@ h4{
 .container{
 text-align: center;
 }
+.container h2{
+    padding: 2%;
+}
+.rulesPlay{
+border:1px solid gray;
+box-shadow: 2px 2px 4px gray;
+width:80%;
+margin:100px auto;
+padding: 3%;
+}
 .notView{
     display: none;
 }
 .report{
     display: none;
+}
+.theEnd{
+    text-align: center;
+    font-size: 2em;
+    color:darkgreen;
+    margin-top: 45vh;
+}
+
+.boxReport{
+    text-align: center;
+}
+.resultBox{
+    border:1px solid red;
+}
+.overResult{
+    color:red;
+}
+.identResult{
+    color:green;
+}
+.underResult{
+    color:blue;
 }

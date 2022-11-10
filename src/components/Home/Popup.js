@@ -6,20 +6,20 @@ const Popup = () => {
         <div className={styles.popup}>
             <div className={styles.myHeader}>
                 <span>Interests:</span>
-                <i class="fa fa-anchor"></i> 
-                <i class="fa fa-wrench"></i>
-                <i class="fa fa-tree"></i>
-                <i class="fa fa-bicycle"></i>
-                <i class="fa fa-road"></i>
+                <i className="fa fa-anchor"></i> 
+                <i className="fa fa-wrench"></i>
+                <i className="fa fa-tree"></i>
+                <i className="fa fa-bicycle"></i>
+                <i className="fa fa-road"></i>
                 <i className="fa-solid fa-music"></i>
-                <i class="fa fa-futbol-o"></i>
+                <i className="fa fa-futbol-o"></i>
         </div>
             <hr />
             <div className={styles.myContent}>
                 <div className={styles.leftBox}>
                     <h3>Hello, my name is <br />
                         Jovica Bogojevic
-                        <p>I am a <strong>Junior <br/>JavaScript/React </strong>developer</p>
+                        <p>I am a <strong>JavaScript/React </strong>developer</p>
                         <a className='btn btn-secondary' href="mailto:jovicabogojevic@hotmail.rs">Contact me</a>
                        </h3>
                             <a href='https://github.com/JOVICABOGOJEVIC/' style={{color:'black', padding:'5%', fontSize:'1.4em'}}>

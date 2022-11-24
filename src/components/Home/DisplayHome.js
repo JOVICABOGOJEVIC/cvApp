@@ -52,7 +52,8 @@ const DisplayHome = () =>{
            </tbody>
            </table>
        </div> )}
-       {isPopup2 && (   <div className={[styles.myPopup]}>
+       {isPopup2 && (
+           <div className={[styles.myPopup]}>
             
             <table className="table table-secondary">
   <tbody>
@@ -67,34 +68,37 @@ const DisplayHome = () =>{
     </tbody>
             </table>
         </div>)}
-        {isPopup3&& (   <div className={[styles.myPopup]}>
-            <span className={styles.myPopup3}>
-            <table clasName="table table-secondary">
+        {isPopup3&& (  
+          <Fragment>
+            <div className={[styles.myPopup]}>
+            
+            <table className="table table-secondary">
   <tbody>
-    <tr>
-      <th scope="row">2009-2018 Jul</th>
-      <td>Services </td>
-      <td>Appliance repairman</td>
-    </tr>
-    <tr>
-      <th scope="row">2018-2021 Oct </th>
-      <td>Metronik inzenjering</td>
-      <td>Service Application Engineer</td>
-    </tr>
-    <tr>
-      <th scope="row">2021-2022 Jan </th>
-      <td>New Frontier Group</td>
-      <td>Practical Work</td>
-    </tr>
-    <tr>
-      <th scope="row">2022-2022 Cur </th>
-      <td>Smart Web</td>
-      <td>Junior Frontend Developer</td>
-    </tr>
-  </tbody>
-</table>
-        </span>
-        </div>)}
+  <tr>
+       <th scope="row">2009-2018 Jul</th>
+       <td>Services </td>
+       <td>Appliance repairman</td>
+     </tr>
+     <tr>
+       <th scope="row">2018-2021 Oct </th>
+       <td>Metronik inzenjering</td>
+       <td>Service Application Engineer</td>
+     </tr>
+     <tr>
+       <th scope="row">2021-2022 Jan </th>
+       <td>New Frontier Group</td>
+       <td>Practical Work</td>
+     </tr>
+     <tr>
+       <th scope="row">2022-2022 Cur </th>
+       <td>Smart Web</td>
+       <td>Junior Frontend Developer</td>
+     </tr>
+    </tbody>
+            </table>
+        </div>
+          </Fragment>
+           )}
         {isPopup4&& (   <div className={[styles.myPopup]}>
             <span className={styles.myPopup4}>
                 

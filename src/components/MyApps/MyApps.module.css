@@ -1,5 +1,6 @@
 .tableApp{
     width:100%;
+    height: 100vh;
     font-family: 'Kalam', cursive;
 }
 .tableApp a{

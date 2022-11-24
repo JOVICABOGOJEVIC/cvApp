@@ -46,7 +46,8 @@ const DisplayHome = () =>{
           and I have behind me several successfully completed projects.
            The courses I finished are: Frontend courses in Udemy, Krojaceva Skola, where I made
           custom websites using: JavaScript, HTML, CSS, as well as in working frameworks like:
-           React, Bootstrap and I used as needed Express and MongoDB. 
+           React, Bootstrap and I used as needed Express and MongoDB. <br /> 
+           I also have six months of experience working in WordPress and Magento, mostly in content editing.
            </td>
            </tr>
            </tbody>

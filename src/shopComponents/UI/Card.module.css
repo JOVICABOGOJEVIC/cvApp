@@ -1,0 +1,7 @@
+
+.card h3{
+    background-image: linear-gradient(to right, white,black, black,black, white);
+    color:white;
+    padding: 2%;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+
+.icon{
+    padding: 0.5rem;
+    
+}
+.cart{
+    padding: 0.5rem;
+
+}
+.badge {
+    background-color: black;
+    color:white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  @media screen and (max-width : 500px){
+    .icon{
+        padding: 0.2rem;
+        
+    }
+    .cart{
+        padding: 0.2rem;
+    
+    }
+    .badge {
+        background-color: black;
+        color:white;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        margin-left: 1rem;
+      }
+    
+  }

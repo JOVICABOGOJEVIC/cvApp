@@ -1,0 +1,18 @@
+.summary{
+    background-color: black;
+    display: flex;
+    text-align: center;
+}
+.summary span{
+    flex-grow: 1;
+    padding:1%;
+    color:white;
+    font-size: 0.8em;
+}
+@media screen and (max-width : 500px){
+    .summary span{
+        padding:1%;
+        color:white;
+        font-size: 0.5em;
+    }
+  }

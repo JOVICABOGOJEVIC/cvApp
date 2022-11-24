@@ -1,0 +1,11 @@
+.boxControlForm{
+    list-style: none;
+    margin:0;
+    padding:0;
+    max-height: 15rem;
+    overflow: scroll;
+}
+.invalid i{
+    color:red;
+    font-size: 0.7em;
+}

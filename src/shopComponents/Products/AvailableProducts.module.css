@@ -1,0 +1,18 @@
+.productList ul{
+    color:black;
+}
+.productsLoading{
+    position:absolute;
+    top:200px;
+    left: 50%;
+    right: 50%;
+    color:white;
+    }
+    .productsError{
+        position:absolute;
+        top:200px;
+        left: 50%;
+        right: 50%;
+        color:red; 
+        width:100px;
+    }

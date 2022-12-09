@@ -23,6 +23,7 @@ function App() {
         <Route path='/app6' component={UserList}></Route>
         <Route path='/app7' component={Header}></Route>
         <Route path='/app8' component={SimpleInput}></Route>
+        <Route path='/app9'></Route>
         </BrowserRouter>
     </div>
   );

@@ -77,6 +77,9 @@ b{
     hr{
         display:none;
     }
+ .leftBox{
+     width:200px;
+ }
   }
   @media screen and (min-width: 1000px) {
 

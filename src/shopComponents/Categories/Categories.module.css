@@ -2,6 +2,21 @@
     padding: 2%;
 }
 .image{
-    width:250px;
+    position: relative;
+    width:270px;
     height: 200px;
+    box-shadow: 4px 4px 8px rgb(208, 206, 206);
+}
+.boxParagraph p{
+    margin: 0;
+    padding:0;
+    position: absolute;
+    bottom: 2px;
+    left:15px;
+}
+@media screen and (max-width:767px) {
+    .image{
+        width:100%;
+        margin:0 auto;
+    }
 }

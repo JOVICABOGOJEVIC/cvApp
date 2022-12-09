@@ -4,6 +4,7 @@ import HeaderCartButton from './HeaderCartButton';
 import Products from '../Products/Products';
 import Cart from '../Cart/Cart';
 import CartProvider from '../../store/CartProvider';
+import Orders from '../Orders/Orders';
 
 const Header = props =>{
     const [cartIsShown, setCartIsShown] = useState(false);
@@ -23,6 +24,8 @@ return (
 <HeaderCartButton onShowCart={showCartHandler}/>
     </header>
     <Products />
+    <hr/>
+    <Orders />
 </ CartProvider>
 )
 }

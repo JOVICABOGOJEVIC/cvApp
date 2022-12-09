@@ -27,64 +27,67 @@ import ProductList from "./ProductsList/ProductsList";
     }
     ]*/
 
-const AvailableProducts = () =>{
+const AvailableProducts = () => {
 
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [httpError, setHttpError] = useState();
 
-    useEffect(() =>{
-        console.log('radi');
+    useEffect(() => {
 
-        const fetchProducts = async() =>{
-           const response = await fetch('https://catering-affe8-default-rtdb.firebaseio.com/products.json').then();
-           const responseData = await response.json(); 
-           if(!response.ok){
-throw new Error('Doslo je do greske');
-           }
-           const loadedProducts = [];
-           for(const key in responseData){
-            loadedProducts.push({
-                id:key,
-            name:responseData[key].name,
-            mark:responseData[key].mark,
-            description:responseData[key].description,
-            price:responseData[key].price
-            })
-           }
-           setProducts(loadedProducts);
-           setIsLoading(false)
+        const fetchProducts = async () => {
+            const response = await fetch('https://catering-affe8-default-rtdb.firebaseio.com/products.json').then();
+            const responseData = await response.json();
+            if (!response.ok) {
+                throw new Error('Doslo je do greske');
+            }
+            const loadedProducts = [];
+            for (const key in responseData) {
+                loadedProducts.push({
+                    id: key,
+                    name: responseData[key].name,
+                    mark: responseData[key].mark,
+                    description: responseData[key].description,
+                    price: responseData[key].price
+                })
+            }
+            setProducts(loadedProducts);
+            setIsLoading(false)
         };
-        fetchProducts().catch((error) =>{
+        fetchProducts().catch((error) => {
             setIsLoading(false);
             setHttpError(error.message)
         })
-    },[])
+    }, [])
 
-    if(isLoading){
-return(
-    <section className={styles.productsLoading}>
-        <i>Loading...</i>
-    </section>
-)
+    if (isLoading) {
+        return (
+            <section className={styles.productsLoading}>
+                <i>Loading...</i>
+            </section>
+        )
     }
-    if(httpError){
-        return(
+    if (httpError) {
+        return (
             <section className={styles.productsError}>
                 <p>{httpError}</p>
             </section>
         )
     }
+   
 
-   console.log(products);
-   const productList = products.map((el)=><ProductList key={Math.random()} id={el.id} name={el.name} mark={el.mark} description={el.description} price={el.price} />);
-  
-    return( 
-    <Card>
-          <section className={styles.productList}>
-         {productList}
-        </section>
-    </Card>
+    const productList = products.map((el) => <ProductList key={Math.random()} id={el.id} name={el.name} mark={el.mark} description={el.description} price={el.price} />);
+   //RADI FILTRIRANJE
+   //let dataPointsValues = products.map(dataPoint => dataPoint.price);
+   //let maxValue = Math.max(...dataPointsValues);
+    return (
+        <Card><div className="container-fluid">
+            <h5 className={styles.headingStyle}>Akcije</h5>
+            <section className={styles.productList}>
+                {productList}
+            </section>
+        </div>
+        </Card>
     )
 }
 

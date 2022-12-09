@@ -27,7 +27,7 @@ const phoneInputRef = useRef();
         const enteredCity = cityInputRef.current.value;
         const enteredMessage = messageInputRef.current.value;
         const enteredPhone = phoneInputRef.current.value;
-
+console.log(enteredPhone);
         const enteredNameisValid = !isEmpty(enteredName);
         const enteredAddressisValid  = !isEmpty(enteredAddress);
         const enteredCityisValid = !isEmpty(enteredCity);
@@ -41,9 +41,6 @@ setFormsInputsValidaty({
     message:enteredMessageisValid,
     phone:enteredPhoneisValid
 })
-console.log(formsInputsValidaty.name);
-console.log(formsInputsValidaty.address);
-console.log(formsInputsValidaty.city);
         const formisValid = 
         enteredNameisValid&&
         enteredAddressisValid&&
@@ -54,6 +51,13 @@ console.log(formsInputsValidaty.city);
         if(formisValid){
 return
         }
+        props.onConfirm({
+            name:enteredName,
+            address:enteredAddress,
+            city:enteredCity,
+            message:enteredMessage,
+            phone:enteredPhone
+        });
     }
     const invalidNameClass = `${styles.control} ${formsInputsValidaty.name ? '': styles.invalid}`
     const invalidAddressClass = `${styles.control} ${formsInputsValidaty.address ? '': styles.invalid}`
@@ -77,13 +81,13 @@ return <form onSubmit={confirmHandler} className={styles.boxControlForm}>
         {!formsInputsValidaty.phone && messageAlert}
     </div>
     <div className={styles.control}>
-    <label for="cars">Izaberite naselje:</label>
+    <label htmlFor="cars">Izaberite naselje:</label>
 
 <select name="city" id="city" ref={cityInputRef} >
-  <option value="volvo">Kaludjerica</option>
-  <option value="saab">Lestane</option>
-  <option value="mercedes">Vinca</option>
-  <option value="audi">Bolec</option>
+  <option value="kaludjerica">Kaludjerica</option>
+  <option value="lestane">Lestane</option>
+  <option value="vinca">Vinca</option>
+  <option value="bolec">Bolec</option>
 </select>
 {!formsInputsValidaty.city && messageAlert}
     </div>
